@@ -150,3 +150,47 @@ CREATE INDEX "IX_LocaisTrabalho_MedicoId" ON "LocaisTrabalho" ("MedicoId");
 2026-06-05 11:19:40.507 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
 2026-06-05 11:19:40.521 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 13.9365ms
 2026-06-05 11:19:40.537 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:40:34.062 -03:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-06-05 11:40:34.116 -03:00 [INF] Database initialized successfully
+2026-06-05 11:40:34.144 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 11:40:34.296 -03:00 [INF] Now listening on: https://localhost:37311
+2026-06-05 11:40:34.299 -03:00 [INF] Now listening on: http://localhost:37312
+2026-06-05 11:40:34.358 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 11:40:34.361 -03:00 [INF] Hosting environment: Development
+2026-06-05 11:40:34.364 -03:00 [INF] Content root path: C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API
+2026-06-05 11:40:35.216 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:40:35.598 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 384.1586ms
+2026-06-05 11:40:35.611 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:41:14.229 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:41:14.255 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 25.6928ms
+2026-06-05 11:41:14.270 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:44:30.089 -03:00 [INF] Application is shutting down...
+2026-06-05 11:46:45.198 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-06-05 11:46:45.238 -03:00 [INF] Database initialized successfully
+2026-06-05 11:46:45.256 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 11:46:45.342 -03:00 [INF] Now listening on: https://localhost:37311
+2026-06-05 11:46:45.342 -03:00 [INF] Now listening on: http://localhost:37312
+2026-06-05 11:46:45.343 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 11:46:45.343 -03:00 [INF] Hosting environment: Development
+2026-06-05 11:46:45.343 -03:00 [INF] Content root path: C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API
+2026-06-05 11:46:45.569 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - null null
+2026-06-05 11:46:45.679 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 111.4843ms
+2026-06-05 11:46:51.545 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - null null
+2026-06-05 11:46:51.549 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 3.0754ms
+2026-06-05 11:48:16.322 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/swagger/index.html - null null
+2026-06-05 11:48:16.402 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/swagger/index.html - 200 null text/html;charset=utf-8 80.2617ms
+2026-06-05 11:48:16.526 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - null null
+2026-06-05 11:48:16.546 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 20.2742ms
+2026-06-05 12:03:47.305 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:03:47.350 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 45.3757ms
+2026-06-05 12:03:47.354 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 12:04:29.300 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:04:29.303 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 3.0325ms
+2026-06-05 12:04:29.303 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 12:08:33.144 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - null null
+2026-06-05 12:08:33.146 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1.9218ms
+2026-06-05 12:09:07.926 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:09:07.939 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 13.1387ms
+2026-06-05 12:09:07.940 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404

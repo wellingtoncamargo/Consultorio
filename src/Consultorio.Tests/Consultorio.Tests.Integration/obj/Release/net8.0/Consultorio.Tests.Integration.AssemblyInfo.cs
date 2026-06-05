@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Consultorio.Tests.Integration")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f715fd81aac5c6c06f31591a3453f3c32d719ae5")]
 [assembly: System.Reflection.AssemblyProductAttribute("Consultorio.Tests.Integration")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Consultorio.Tests.Integration")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

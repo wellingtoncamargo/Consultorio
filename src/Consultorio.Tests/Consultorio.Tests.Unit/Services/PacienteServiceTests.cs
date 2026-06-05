@@ -1,9 +1,10 @@
-using Moq;
-using System;
+﻿using System;
 using System.Threading.Tasks;
-using Consultorio.Domain.Entities;
-using Consultorio.Services;
 using NUnit.Framework;
+
+using Moq;
+using Consultorio.Services;
+using Consultorio.Domain.Entities;
 using Consultorio.Domain.Repositories;
 
 namespace Consultorio.Tests.Unit.Services
@@ -11,47 +12,53 @@ namespace Consultorio.Tests.Unit.Services
     [TestFixture]
     public class PacienteServiceTests
     {
-        private Mock<IPacienteRepository> _pacienteRepositoryMock = null!;
-        private PacienteService _pacienteService = null!;
+        private Mock<IPacienteRepository> _repoMock;
+        private PacienteService _service;
 
         [SetUp]
         public void Setup()
         {
-            _pacienteRepositoryMock = new Mock<IPacienteRepository>();
-            _pacienteService = new PacienteService(_pacienteRepositoryMock.Object);
+            _repoMock = new Mock<IPacienteRepository>();
+            _service = new PacienteService(_repoMock.Object);
         }
 
         [Test]
-        public async Task CriarPaciente_ComDadosValidos_DeveRetornarPacienteComId()
+        public async Task SalvarAsync_ShouldReturnFalse_When_NomeEmpty()
         {
-            var paciente = new Paciente
-            {
-                Nome = "João Silva",
-                Email = "joao@example.com",
-                CPF = "12345678901"
-            };
+            var paciente = new Paciente { Id = Guid.Empty, Nome = "", CPF = "123" };
 
-            _pacienteRepositoryMock.Setup(r => r.AddAsync(It.IsAny<Paciente>())).Returns(Task.CompletedTask);
+            var res = await _service.SalvarAsync(paciente);
 
-            var resultado = await _pacienteService.SalvarAsync(paciente);
-
-            Assert.That(resultado.ok, Is.True);
-            Assert.That(paciente.Id, Is.Not.EqualTo(Guid.Empty));
+            Assert.That(res.ok, Is.False);
+            Assert.That(res.erro.Contains("Nome"), Is.True);
+            _repoMock.Verify(r => r.AddAsync(It.IsAny<Paciente>()), Times.Never);
         }
 
         [Test]
-        public async Task CriarPaciente_ComNomeVazio_DeveLancarExcecao()
+        public async Task SalvarAsync_ShouldReturnFalse_When_CPF_Duplicate()
         {
-            var paciente = new Paciente
-            {
-                Nome = "",
-                Email = "joao@example.com"
-            };
+            var existing = new Paciente { Id = Guid.NewGuid(), CPF = "111" };
+            _repoMock.Setup(r => r.GetByCPFAsync("111")).ReturnsAsync(existing);
 
-            var resultado = await _pacienteService.SalvarAsync(paciente);
-            Assert.That(resultado.ok, Is.False);
-            Assert.That(resultado.erro, Does.Contain("Nome é obrigatório"));
+            var paciente = new Paciente { Id = Guid.Empty, Nome = "Joao", CPF = "111" };
+            var res = await _service.SalvarAsync(paciente);
+
+            Assert.That(res.ok, Is.False);
+            Assert.That(res.erro.Contains("CPF"), Is.True);
+            _repoMock.Verify(r => r.AddAsync(It.IsAny<Paciente>()), Times.Never);
+        }
+
+        [Test]
+        public async Task SalvarAsync_ShouldCreate_When_Valid_NewPaciente()
+        {
+            _repoMock.Setup(r => r.GetByCPFAsync(It.IsAny<string>())).ReturnsAsync((Paciente?)null);
+            _repoMock.Setup(r => r.AddAsync(It.IsAny<Paciente>())).Returns(Task.CompletedTask).Verifiable();
+
+            var paciente = new Paciente { Id = Guid.Empty, Nome = "Maria", CPF = "999" };
+            var res = await _service.SalvarAsync(paciente);
+
+            Assert.That(res.ok, Is.True);
+            _repoMock.Verify(r => r.AddAsync(It.Is<Paciente>(p => p.Nome == "Maria")), Times.Once);
         }
     }
 }
-

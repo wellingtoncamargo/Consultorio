@@ -146,6 +146,7 @@ C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Rel
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\Consultorio.API.csproj.CoreCompileInputs.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\Consultorio.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\Consultorio.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\Consultorio.API.sourcelink.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\staticwebassets.build.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\staticwebassets.development.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\obj\Release\net8.0\staticwebassets\msbuild.Consultorio.API.Microsoft.AspNetCore.StaticWebAssets.props

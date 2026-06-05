@@ -8,6 +8,7 @@ C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\Consultorio.Application.AssemblyInfoInputs.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\Consultorio.Application.AssemblyInfo.cs
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\Consultorio.Application.csproj.CoreCompileInputs.cache
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\Consultorio.Application.sourcelink.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\Consulto.968A52A4.Up2Date
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\Consultorio.Application.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\obj\Release\net8.0\refint\Consultorio.Application.dll

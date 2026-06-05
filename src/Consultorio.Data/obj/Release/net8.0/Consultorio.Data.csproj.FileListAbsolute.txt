@@ -1,8 +1,3 @@
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.csproj.AssemblyReference.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.AssemblyInfoInputs.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.AssemblyInfo.cs
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.csproj.CoreCompileInputs.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\bin\Release\net8.0\Consultorio.Data.deps.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\bin\Release\net8.0\Consultorio.Data.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\bin\Release\net8.0\Consultorio.Data.pdb
@@ -13,6 +8,7 @@ C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Re
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.AssemblyInfoInputs.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.AssemblyInfo.cs
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.csproj.CoreCompileInputs.cache
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.sourcelink.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consulto.C77A12D2.Up2Date
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\Consultorio.Data.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\obj\Release\net8.0\refint\Consultorio.Data.dll

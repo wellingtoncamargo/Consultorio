@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Consultorio.Application\Consultorio.Application.csproj" />
     <ProjectReference Include="..\..\Consultorio.Domain\Consultorio.Domain.csproj" />
     <ProjectReference Include="..\..\Consultorio.Services\Consultorio.Services.csproj" />
   </ItemGroup>
