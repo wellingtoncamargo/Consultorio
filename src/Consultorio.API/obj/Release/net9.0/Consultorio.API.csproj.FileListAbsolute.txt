@@ -1,7 +1,0 @@
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\Consultorio.API.csproj.AssemblyReference.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\rpswa.dswa.cache.json
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\Consultorio.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\Consultorio.API.AssemblyInfoInputs.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\Consultorio.API.AssemblyInfo.cs
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\Consultorio.API.csproj.CoreCompileInputs.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.API\obj\Release\net9.0\Consultorio.API.MvcApplicationPartsAssemblyInfo.cache

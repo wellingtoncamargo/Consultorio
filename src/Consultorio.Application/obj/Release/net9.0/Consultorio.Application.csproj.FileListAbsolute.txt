@@ -1,5 +1,0 @@
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Application\obj\Release\net9.0\Consultorio.Application.csproj.AssemblyReference.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Application\obj\Release\net9.0\Consultorio.Application.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Application\obj\Release\net9.0\Consultorio.Application.AssemblyInfoInputs.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Application\obj\Release\net9.0\Consultorio.Application.AssemblyInfo.cs
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Application\obj\Release\net9.0\Consultorio.Application.csproj.CoreCompileInputs.cache

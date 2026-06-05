@@ -1,7 +1,3 @@
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.AssemblyInfoInputs.cache
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.AssemblyInfo.cs
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.csproj.CoreCompileInputs.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\bin\Release\net8.0\Consultorio.Domain.deps.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\bin\Release\net8.0\Consultorio.Domain.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\bin\Release\net8.0\Consultorio.Domain.pdb
@@ -9,6 +5,7 @@ C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.AssemblyInfoInputs.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.AssemblyInfo.cs
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.csproj.CoreCompileInputs.cache
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.sourcelink.json
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\refint\Consultorio.Domain.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\obj\Release\net8.0\Consultorio.Domain.pdb

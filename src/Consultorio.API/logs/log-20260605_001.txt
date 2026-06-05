@@ -1,0 +1,130 @@
+2026-06-05 12:03:47.784 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-06-05 12:03:47.812 -03:00 [INF] Database initialized successfully
+2026-06-05 12:03:47.824 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 12:03:47.888 -03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:37311: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+ ---> System.Net.Sockets.SocketException (10048): Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-06-05 12:04:29.868 -03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-06-05 12:04:29.901 -03:00 [INF] Database initialized successfully
+2026-06-05 12:04:29.913 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 12:04:29.992 -03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://127.0.0.1:37311: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+ ---> System.Net.Sockets.SocketException (10048): Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-06-05 12:11:13.683 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-06-05 12:11:13.721 -03:00 [INF] Database initialized successfully
+2026-06-05 12:11:13.738 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 12:11:13.799 -03:00 [INF] Now listening on: https://localhost:37311
+2026-06-05 12:11:13.801 -03:00 [INF] Now listening on: http://localhost:37312
+2026-06-05 12:11:13.828 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 12:11:13.831 -03:00 [INF] Hosting environment: Development
+2026-06-05 12:11:13.833 -03:00 [INF] Content root path: C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API
+2026-06-05 12:11:14.050 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:11:14.367 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 308.0421ms
+2026-06-05 12:11:14.379 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 12:11:42.979 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:11:43.002 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 22.4542ms
+2026-06-05 12:11:43.026 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 12:11:52.059 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/ - null null
+2026-06-05 12:11:52.089 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/ - 307 0 null 29.5757ms
+2026-06-05 12:11:52.095 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:11:52.124 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 28.6366ms
+2026-06-05 12:11:52.143 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 12:12:06.959 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/ - null null
+2026-06-05 12:12:06.980 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/ - 307 0 null 20.8366ms
+2026-06-05 12:12:06.989 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 12:12:07.015 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 26.2806ms
+2026-06-05 12:12:07.034 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 12:13:59.917 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger - null null
+2026-06-05 12:13:59.937 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger - 301 0 null 19.9656ms
+2026-06-05 12:13:59.944 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/index.html - null null
+2026-06-05 12:14:00.129 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/index.html - 200 null text/html;charset=utf-8 185.1679ms
+2026-06-05 12:14:00.150 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/swagger-ui.css - null null
+2026-06-05 12:14:00.150 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/swagger-ui-bundle.js - null null
+2026-06-05 12:14:00.150 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-05 12:14:00.150 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-05 12:14:00.166 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/_vs/browserLink - null null
+2026-06-05 12:14:00.174 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/_framework/aspnetcore-browser-refresh.js - 200 13766 application/javascript; charset=utf-8 23.4944ms
+2026-06-05 12:14:00.178 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-06-05 12:14:00.178 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-06-05 12:14:00.182 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 32.1444ms
+2026-06-05 12:14:00.183 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-06-05 12:14:00.185 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/swagger-ui.css - 200 152034 text/css 34.8567ms
+2026-06-05 12:14:00.194 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 44.0727ms
+2026-06-05 12:14:00.250 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.7584ms
+2026-06-05 12:14:00.347 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/v1/swagger.json - null null
+2026-06-05 12:14:00.362 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/favicon-32x32.png - null null
+2026-06-05 12:14:00.367 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-06-05 12:14:00.372 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 24.9451ms
+2026-06-05 12:14:00.373 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/favicon-32x32.png - 200 628 image/png 10.4643ms
+2026-06-05 12:14:09.305 -03:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2026-06-05 12:14:09.342 -03:00 [INF] Database initialized successfully
+2026-06-05 12:14:09.359 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 12:14:09.423 -03:00 [INF] Now listening on: https://localhost:37311
+2026-06-05 12:14:09.426 -03:00 [INF] Now listening on: http://localhost:37312
+2026-06-05 12:14:09.455 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 12:14:09.460 -03:00 [INF] Hosting environment: Development
+2026-06-05 12:14:09.463 -03:00 [INF] Content root path: C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API
+2026-06-05 12:14:09.540 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/index.html - null null
+2026-06-05 12:14:09.615 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/index.html - 404 0 null 75.6256ms
+2026-06-05 12:14:09.627 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/swagger/index.html, Response status code: 404
+2026-06-05 12:14:24.181 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/ - null null
+2026-06-05 12:14:24.199 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/ - 301 0 null 18.0544ms
+2026-06-05 12:14:24.209 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/index.html - null null
+2026-06-05 12:14:24.243 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/index.html - 200 null text/html;charset=utf-8 34.2735ms
+2026-06-05 12:14:33.824 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/index.html - null null
+2026-06-05 12:14:33.845 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/index.html - 404 0 null 20.4005ms
+2026-06-05 12:14:33.864 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/swagger/index.html, Response status code: 404
+2026-06-05 12:14:34.630 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/swagger/index.html - null null
+2026-06-05 12:14:34.650 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/swagger/index.html - 404 0 null 19.9361ms
+2026-06-05 12:14:34.660 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/swagger/index.html, Response status code: 404
+2026-06-05 12:14:39.444 -03:00 [INF] Application is shutting down...

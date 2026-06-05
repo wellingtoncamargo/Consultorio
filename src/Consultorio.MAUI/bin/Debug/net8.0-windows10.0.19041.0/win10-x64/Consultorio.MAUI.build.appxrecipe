@@ -10,34 +10,34 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>maui-package-name-placeholder</PackageIdentityName>
     <PackageIdentityPublisher>CN=User Name</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
+    <IntermediateOutputPath>c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\</IntermediateOutputPath>
     <RemoteDeploymentType>CopyToDevice</RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>false</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath></WindowsSdkPath>
-    <LayoutDir>C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
+    <LayoutDir>c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
+    <AppXManifest Include="c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
+    <AppxPackagedFile Include="c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Consultorio.MAUI.runtimeconfig.json">
+    <AppxPackagedFile Include="c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Consultorio.MAUI.runtimeconfig.json">
       <PackagePath>Consultorio.MAUI.runtimeconfig.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Consultorio.MAUI.dll">
+    <AppxPackagedFile Include="c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Consultorio.MAUI.dll">
       <PackagePath>Consultorio.MAUI.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
+    <AppxPackagedFile Include="c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Consultorio.MAUI.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Consultorio.MAUI.deps.json">
+    <AppxPackagedFile Include="c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Consultorio.MAUI.deps.json">
       <PackagePath>Consultorio.MAUI.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\welli\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.56\lib\net8.0\Microsoft.Windows.SDK.NET.dll">

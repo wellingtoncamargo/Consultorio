@@ -1,1 +1,1 @@
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj;x64
+c:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj;x64

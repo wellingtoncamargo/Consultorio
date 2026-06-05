@@ -1,0 +1,12 @@
+{
+  "mutate": ["src/**/*.cs"],
+  "testProject": "src/Consultorio.Tests/Consultorio.Tests.Unit/Consultorio.Tests.Unit.csproj",
+  "reporters": ["html", "json", "progress"],
+  "thresholds": {
+    "high": 80,
+    "low": 70,
+    "break": 60
+  },
+  "excluded-mutations": [],
+  "timeoutMS": 600000
+}

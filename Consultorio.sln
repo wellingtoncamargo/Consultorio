@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{02EA681E-C
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{93F0BC81-8817-4CF6-BB31-F6CC6FE26D67}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{466D6A98-E5B8-43E4-8A5A-B7F92049B776}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consultorio.Application", "src\Consultorio.Application\Consultorio.Application.csproj", "{23740114-A340-C88F-ADEC-B861322DE271}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Consultorio.API", "src\Consultorio.API\Consultorio.API.csproj", "{03EAC50A-4DA8-4A0B-7C89-0BCF67EA6963}"
