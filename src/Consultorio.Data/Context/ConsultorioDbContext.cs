@@ -12,6 +12,7 @@ namespace Consultorio.Data.Context
         public DbSet<LocalTrabalho> LocaisTrabalho { get; set; }
         public DbSet<Agendamento> Agendamentos { get; set; }
         public DbSet<Historico> Historicos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -72,6 +73,16 @@ namespace Consultorio.Data.Context
                 e.Property(h => h.Tratamento).HasMaxLength(2000);
                 e.Property(h => h.Medicacoes).HasMaxLength(2000);
                 e.HasIndex(h => new { h.PacienteId, h.DataConsulta });
+            });
+
+            modelBuilder.Entity<Usuario>(e =>
+            {
+                e.HasKey(u => u.Id);
+                e.Property(u => u.Nome).IsRequired().HasMaxLength(255);
+                e.Property(u => u.Email).IsRequired().HasMaxLength(255);
+                e.Property(u => u.PasswordHash).IsRequired().HasMaxLength(512);
+                e.Property(u => u.Role).HasMaxLength(50);
+                e.HasIndex(u => u.Email).IsUnique();
             });
         }
     }

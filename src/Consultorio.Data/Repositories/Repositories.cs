@@ -245,4 +245,16 @@ namespace Consultorio.Data.Repositories
                 .Include(h => h.Medico)
                 .OrderByDescending(h => h.DataConsulta).ToListAsync();
     }
+
+    // ── Usuario Repository ─────────────────────────────────────────────────────
+    public class UsuarioRepository : BaseRepository<Usuario>, IUsuarioRepository
+    {
+        public UsuarioRepository(ConsultorioDbContext context) : base(context) { }
+
+        public async Task<Usuario?> GetByEmailAsync(string email) =>
+            await _dbSet.FirstOrDefaultAsync(u => u.Email == email);
+
+        public async Task<bool> AnyAsync() =>
+            await _dbSet.AnyAsync();
+    }
 }

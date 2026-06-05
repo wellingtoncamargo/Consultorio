@@ -66,6 +66,7 @@ builder.Services.AddTransient<IPacienteRepository, PacienteRepository>();
 builder.Services.AddTransient<IMedicoRepository, MedicoRepository>();
 builder.Services.AddTransient<ILocalTrabalhoRepository, LocalTrabalhoRepository>();
 builder.Services.AddTransient<IAgendamentoRepository, AgendamentoRepository>();
+builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
 
 // Register SMTP configuration and notification service (NotificacaoService is used by AgendamentoService)
 var smtpConfig = builder.Configuration.GetSection("Smtp").Get<Consultorio.Services.ConfiguracaoSmtp>() ?? new Consultorio.Services.ConfiguracaoSmtp();
@@ -75,6 +76,9 @@ builder.Services.AddTransient<NotificacaoService>();
 builder.Services.AddTransient<PacienteService>();
 builder.Services.AddTransient<MedicoService>();
 builder.Services.AddTransient<AgendamentoService>();
+
+// Password hasher for user passwords
+builder.Services.AddSingleton<IPasswordHasherService, PasswordHasherService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -144,7 +148,80 @@ try
     using (var scope = app.Services.CreateScope())
     {
         var context = scope.ServiceProvider.GetRequiredService<ConsultorioDbContext>();
-        context.Database.EnsureCreated();
+        // Ensure database exists and apply migrations
+        try
+        {
+            context.Database.Migrate();
+            Log.Information("Database migrated successfully");
+        }
+        catch (Exception ex)
+        {
+            Log.Warning(ex, "Migration failed or not available, falling back to EnsureCreated");
+            context.Database.EnsureCreated();
+        }
+
+        // Ensure Usuarios table exists for SQLite (in case DB was created before adding entity)
+        try
+        {
+            var conn = context.Database.GetDbConnection();
+            if (conn != null && conn.GetType().Name.Contains("Sqlite", StringComparison.OrdinalIgnoreCase))
+            {
+                var exists = false;
+                using (var cmd = conn.CreateCommand())
+                {
+                    cmd.CommandText = "SELECT name FROM sqlite_master WHERE type='table' AND name='Usuarios';";
+                    if (conn.State != System.Data.ConnectionState.Open) conn.Open();
+                    var res = cmd.ExecuteScalar();
+                    exists = res != null;
+                }
+
+                if (!exists)
+                {
+                    context.Database.ExecuteSqlRaw(@"CREATE TABLE IF NOT EXISTS Usuarios (
+                        Id TEXT PRIMARY KEY,
+                        Nome TEXT NOT NULL,
+                        Email TEXT NOT NULL UNIQUE,
+                        PasswordHash TEXT NOT NULL,
+                        Role TEXT,
+                        Ativo INTEGER,
+                        DataCriacao TEXT
+                    );");
+                    Log.Information("Usuarios table created via SQL.");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Warning(ex, "Could not verify/create Usuarios table via raw SQL");
+        }
+
+        // Seed admin user if none exist
+        try
+        {
+            var usuarioRepo = scope.ServiceProvider.GetService<Consultorio.Domain.Repositories.IUsuarioRepository>();
+            var hasher = scope.ServiceProvider.GetService<Consultorio.Application.Services.IPasswordHasherService>();
+            if (usuarioRepo != null)
+            {
+                var any = await usuarioRepo.AnyAsync();
+                if (!any)
+                {
+                    var admin = new Consultorio.Domain.Entities.Usuario
+                    {
+                        Nome = "Administrator",
+                        Email = "admin@local",
+                        Role = "Admin",
+                        PasswordHash = hasher != null ? hasher.HashPassword("Admin123!") : ""
+                    };
+                    await usuarioRepo.AddAsync(admin);
+                    Log.Information("Admin user seeded: admin@local (senha: Admin123!)");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Log.Error(ex, "Failed to seed admin user");
+        }
+
         Log.Information("Database initialized successfully");
     }
 }
