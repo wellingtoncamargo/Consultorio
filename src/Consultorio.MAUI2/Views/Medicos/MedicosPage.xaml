@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Consultorio.MAUI.Views.Medicos.MedicosPage">
+
+    <VerticalStackLayout Padding="20">
+
+        <Label
+            Text="Tela em constru��o"
+            FontSize="24" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

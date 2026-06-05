@@ -1,0 +1,40 @@
+  Determinando os projetos a serem restaurados...
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\Consultorio.API.csproj : warning NU1608: Versão detectada do pacote fora da restrição de dependência: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requer AutoMapper (= 12.0.1), mas a versão AutoMapper 16.1.1 foi resolvida. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio.sln]
+  Todos os projetos estão atualizados para restauração.
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\Consultorio.API.csproj : warning NU1608: Versão detectada do pacote fora da restrição de dependência: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requer AutoMapper (= 12.0.1), mas a versão AutoMapper 16.1.1 foi resolvida.
+MainPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Agendamentos\AgendamentoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Configuracoes\ConfiguracoesPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Historico\HistoricoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\LocalTrabalho\LocalTrabalhoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\MainPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Medicos\CadastroMedicoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Medicos\MedicosPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Pacientes\CadastroPacientePage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Pacientes\PacientesPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+  Consultorio.Domain -> C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Domain\bin\Debug\net8.0\Consultorio.Domain.dll
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Services\PacienteService.cs(268,19): error CS0234: O nome de tipo ou namespace "Maui" não existe no namespace "Microsoft" (você está sem uma referência de assembly?) [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Services\Consultorio.Services.csproj]
+  Consultorio.Application -> C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Application\bin\Debug\net8.0\Consultorio.Application.dll
+  Consultorio.Data -> C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Data\bin\Debug\net8.0\Consultorio.Data.dll
+
+FALHA da compilação.
+
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\Consultorio.API.csproj : warning NU1608: Versão detectada do pacote fora da restrição de dependência: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requer AutoMapper (= 12.0.1), mas a versão AutoMapper 16.1.1 foi resolvida. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\Consultorio.sln]
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API\Consultorio.API.csproj : warning NU1608: Versão detectada do pacote fora da restrição de dependência: AutoMapper.Extensions.Microsoft.DependencyInjection 12.0.1 requer AutoMapper (= 12.0.1), mas a versão AutoMapper 16.1.1 foi resolvida.
+MainPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Agendamentos\AgendamentoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Configuracoes\ConfiguracoesPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Historico\HistoricoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\LocalTrabalho\LocalTrabalhoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\MainPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Medicos\CadastroMedicoPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Medicos\MedicosPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Pacientes\CadastroPacientePage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+Views\Pacientes\PacientesPage.xaml : error : Root element is missing. [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.MAUI\Consultorio.MAUI.csproj]
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Services\PacienteService.cs(268,19): error CS0234: O nome de tipo ou namespace "Maui" não existe no namespace "Microsoft" (você está sem uma referência de assembly?) [C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Services\Consultorio.Services.csproj]
+    2 Aviso(s)
+    11 Erro(s)
+
+Tempo Decorrido 00:00:05.12
+
+As atualizações de carga de trabalho estão disponíveis. Execute `dotnet workload list` para obter mais informações.

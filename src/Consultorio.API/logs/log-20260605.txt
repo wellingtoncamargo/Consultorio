@@ -1,0 +1,152 @@
+2026-06-05 11:12:28.788 -03:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+PRAGMA journal_mode = 'wal';
+2026-06-05 11:12:28.890 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Medicos" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Medicos" PRIMARY KEY,
+    "Nome" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "Telefone" TEXT NOT NULL,
+    "Celular" TEXT NOT NULL,
+    "CPF" TEXT NOT NULL,
+    "RG" TEXT NOT NULL,
+    "CRM" TEXT NOT NULL,
+    "Especialidade" TEXT NOT NULL,
+    "Endereco" TEXT NOT NULL,
+    "Numero" TEXT NOT NULL,
+    "Complemento" TEXT NOT NULL,
+    "Bairro" TEXT NOT NULL,
+    "Cidade" TEXT NOT NULL,
+    "Estado" TEXT NOT NULL,
+    "CEP" TEXT NOT NULL,
+    "Observacoes" TEXT NOT NULL,
+    "Ativo" INTEGER NOT NULL,
+    "DataCriacao" TEXT NOT NULL,
+    "DataAtualizacao" TEXT NULL
+);
+2026-06-05 11:12:28.895 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Pacientes" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Pacientes" PRIMARY KEY,
+    "Nome" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "Telefone" TEXT NOT NULL,
+    "Celular" TEXT NOT NULL,
+    "DataNascimento" TEXT NOT NULL,
+    "CPF" TEXT NOT NULL,
+    "RG" TEXT NOT NULL,
+    "Endereco" TEXT NOT NULL,
+    "Numero" TEXT NOT NULL,
+    "Complemento" TEXT NOT NULL,
+    "Bairro" TEXT NOT NULL,
+    "Cidade" TEXT NOT NULL,
+    "Estado" TEXT NOT NULL,
+    "CEP" TEXT NOT NULL,
+    "Observacoes" TEXT NOT NULL,
+    "Ativo" INTEGER NOT NULL,
+    "DataCriacao" TEXT NOT NULL,
+    "DataAtualizacao" TEXT NULL
+);
+2026-06-05 11:12:28.899 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "LocaisTrabalho" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_LocaisTrabalho" PRIMARY KEY,
+    "MedicoId" TEXT NOT NULL,
+    "Nome" TEXT NOT NULL,
+    "Endereco" TEXT NOT NULL,
+    "Numero" TEXT NOT NULL,
+    "Complemento" TEXT NOT NULL,
+    "Bairro" TEXT NOT NULL,
+    "Cidade" TEXT NOT NULL,
+    "Estado" TEXT NOT NULL,
+    "CEP" TEXT NOT NULL,
+    "Telefone" TEXT NOT NULL,
+    "HorarioAbertura" TEXT NOT NULL,
+    "HorarioFechamento" TEXT NOT NULL,
+    "Ativo" INTEGER NOT NULL,
+    "DataCriacao" TEXT NOT NULL,
+    "DataAtualizacao" TEXT NULL,
+    CONSTRAINT "FK_LocaisTrabalho_Medicos_MedicoId" FOREIGN KEY ("MedicoId") REFERENCES "Medicos" ("Id") ON DELETE CASCADE
+);
+2026-06-05 11:12:28.901 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Historicos" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Historicos" PRIMARY KEY,
+    "PacienteId" TEXT NOT NULL,
+    "MedicoId" TEXT NOT NULL,
+    "AgendamentoId" TEXT NULL,
+    "DataConsulta" TEXT NOT NULL,
+    "Diagnostico" TEXT NOT NULL,
+    "Tratamento" TEXT NOT NULL,
+    "Medicacoes" TEXT NOT NULL,
+    "Observacoes" TEXT NOT NULL,
+    "Receita" TEXT NOT NULL,
+    "Anamnese" TEXT NOT NULL,
+    "ExamesRealizados" TEXT NOT NULL,
+    "DataCriacao" TEXT NOT NULL,
+    "DataAtualizacao" TEXT NULL,
+    CONSTRAINT "FK_Historicos_Medicos_MedicoId" FOREIGN KEY ("MedicoId") REFERENCES "Medicos" ("Id") ON DELETE RESTRICT,
+    CONSTRAINT "FK_Historicos_Pacientes_PacienteId" FOREIGN KEY ("PacienteId") REFERENCES "Pacientes" ("Id") ON DELETE RESTRICT
+);
+2026-06-05 11:12:28.904 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE "Agendamentos" (
+    "Id" TEXT NOT NULL CONSTRAINT "PK_Agendamentos" PRIMARY KEY,
+    "PacienteId" TEXT NOT NULL,
+    "MedicoId" TEXT NOT NULL,
+    "LocalTrabalhoId" TEXT NOT NULL,
+    "DataAgendamento" TEXT NOT NULL,
+    "HoraAgendamento" TEXT NOT NULL,
+    "DuracaoMinutos" INTEGER NOT NULL,
+    "Status" INTEGER NOT NULL,
+    "Motivo" TEXT NOT NULL,
+    "Observacoes" TEXT NOT NULL,
+    "NotificadoPorEmail" INTEGER NOT NULL,
+    "NotificadoPorWhatsApp" INTEGER NOT NULL,
+    "DataCriacao" TEXT NOT NULL,
+    "DataAtualizacao" TEXT NULL,
+    CONSTRAINT "FK_Agendamentos_LocaisTrabalho_LocalTrabalhoId" FOREIGN KEY ("LocalTrabalhoId") REFERENCES "LocaisTrabalho" ("Id") ON DELETE RESTRICT,
+    CONSTRAINT "FK_Agendamentos_Medicos_MedicoId" FOREIGN KEY ("MedicoId") REFERENCES "Medicos" ("Id") ON DELETE RESTRICT,
+    CONSTRAINT "FK_Agendamentos_Pacientes_PacienteId" FOREIGN KEY ("PacienteId") REFERENCES "Pacientes" ("Id") ON DELETE RESTRICT
+);
+2026-06-05 11:12:28.907 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Agendamentos_LocalTrabalhoId" ON "Agendamentos" ("LocalTrabalhoId");
+2026-06-05 11:12:28.909 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Agendamentos_MedicoId_DataAgendamento" ON "Agendamentos" ("MedicoId", "DataAgendamento");
+2026-06-05 11:12:28.911 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Agendamentos_PacienteId_DataAgendamento" ON "Agendamentos" ("PacienteId", "DataAgendamento");
+2026-06-05 11:12:28.914 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Historicos_MedicoId" ON "Historicos" ("MedicoId");
+2026-06-05 11:12:28.915 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_Historicos_PacienteId_DataConsulta" ON "Historicos" ("PacienteId", "DataConsulta");
+2026-06-05 11:12:28.918 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE INDEX "IX_LocaisTrabalho_MedicoId" ON "LocaisTrabalho" ("MedicoId");
+2026-06-05 11:12:28.927 -03:00 [INF] Database initialized successfully
+2026-06-05 11:12:28.945 -03:00 [INF] User profile is available. Using 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-05 11:12:28.955 -03:00 [INF] Creating key {cb9d2af9-e035-48a5-80a9-6291b1f972d5} with creation date 2026-06-05 14:12:28Z, activation date 2026-06-05 14:12:28Z, and expiration date 2026-09-03 14:12:28Z.
+2026-06-05 11:12:28.968 -03:00 [INF] Writing data to file 'C:\Users\welli\AppData\Local\ASP.NET\DataProtection-Keys\key-cb9d2af9-e035-48a5-80a9-6291b1f972d5.xml'.
+2026-06-05 11:12:29.095 -03:00 [INF] Now listening on: https://localhost:37311
+2026-06-05 11:12:29.097 -03:00 [INF] Now listening on: http://localhost:37312
+2026-06-05 11:12:29.099 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-05 11:12:29.100 -03:00 [INF] Hosting environment: Development
+2026-06-05 11:12:29.101 -03:00 [INF] Content root path: C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.API
+2026-06-05 11:15:43.823 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:15:43.864 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 41.4366ms
+2026-06-05 11:15:43.874 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:15:43.979 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/favicon.ico - null null
+2026-06-05 11:15:43.990 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/favicon.ico - 404 0 null 10.7914ms
+2026-06-05 11:15:43.993 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/favicon.ico, Response status code: 404
+2026-06-05 11:15:55.183 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:15:55.192 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 9.6005ms
+2026-06-05 11:15:55.199 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:15:58.637 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/ - null null
+2026-06-05 11:15:58.660 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/ - 307 0 null 22.7209ms
+2026-06-05 11:15:58.664 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:15:58.672 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 8.4895ms
+2026-06-05 11:15:58.677 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:16:32.304 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:16:32.318 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 13.581ms
+2026-06-05 11:16:32.327 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:16:46.789 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:37312/ - null null
+2026-06-05 11:16:46.802 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:37312/ - 307 0 null 12.3315ms
+2026-06-05 11:16:46.808 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:16:46.828 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 19.8506ms
+2026-06-05 11:16:46.840 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404
+2026-06-05 11:19:40.507 -03:00 [INF] Request starting HTTP/2 GET https://localhost:37311/ - null null
+2026-06-05 11:19:40.521 -03:00 [INF] Request finished HTTP/2 GET https://localhost:37311/ - 404 0 null 13.9365ms
+2026-06-05 11:19:40.537 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:37311/, Response status code: 404

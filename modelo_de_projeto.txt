@@ -1,0 +1,131 @@
+src/
+    ├── Consultorio.API/                    
+    │   ├── Controllers/
+    │   │   ├── PacientesController.cs
+    │   │   ├── MedicosController.cs
+    │   │   ├── AgendamentosController.cs
+    │   │   └── HistoricoController.cs
+    │   ├── Services/
+    │   ├── Repositories/
+    │   ├── Models/
+    │   ├── DTOs/
+    │   ├── appsettings.json
+    │   ├── Program.cs
+    │   └── Consultorio.API.csproj
+    │
+    ├── Consultorio.MAUI/                   
+    │   ├── Resources/
+    │   │   ├── Images/
+    │   │   ├── Fonts/
+    │   │   └── Styles/
+    │   ├── Views/
+    │   │   ├── Agendamentos/
+    │   │   │   ├── AgendamentoPage.xaml
+    │   │   │   └── AgendamentoPage.xaml.cs
+    │   │   ├── Pacientes/
+    │   │   │   ├── PacientesPage.xaml
+    │   │   │   ├── CadastroPacientePage.xaml
+    │   │   │   └── PacientesPage.xaml.cs
+    │   │   ├── Medicos/
+    │   │   │   ├── MedicosPage.xaml
+    │   │   │   ├── CadastroMedicoPage.xaml
+    │   │   │   └── MedicosPage.xaml.cs
+    │   │   ├── Historico/
+    │   │   │   ├── HistoricoPage.xaml
+    │   │   │   └── HistoricoPage.xaml.cs
+    │   │   ├── LocalTrabalho/
+    │   │   │   ├── LocalTrabalhoPage.xaml
+    │   │   │   └── LocalTrabalhoPage.xaml.cs
+    │   │   ├── Configuracoes/
+    │   │   │   ├── ConfiguracoesPage.xaml
+    │   │   │   └── ConfiguracoesPage.xaml.cs
+    │   │   └── MainPage.xaml
+    │   ├── ViewModels/
+    │   │   ├── ViewModelBase.cs
+    │   │   ├── AgendamentoViewModel.cs
+    │   │   ├── PacienteViewModel.cs
+    │   │   ├── MedicoViewModel.cs
+    │   │   ├── HistoricoViewModel.cs
+    │   │   └── LocalTrabalhoViewModel.cs
+    │   ├── Services/
+    │   │   ├── ApiService.cs
+    │   │   ├── LocalStorageService.cs
+    │   │   ├── NotificacaoService.cs
+    │   │   └── WhatsAppService.cs
+    │   ├── Models/
+    │   │   ├── Paciente.cs
+    │   │   ├── Medico.cs
+    │   │   ├── Agendamento.cs
+    │   │   ├── Historico.cs
+    │   │   └── LocalTrabalho.cs
+    │   ├── Converters/
+    │   ├── Behaviors/
+    │   ├── App.xaml
+    │   ├── App.xaml.cs
+    │   ├── MauiProgram.cs
+    │   ├── Consultorio.MAUI.csproj
+    │   └── GlobalUsings.cs
+    │
+    ├── Consultorio.Data/                   
+    │   ├── Context/
+    │   │   └── ConsultorioDbContext.cs
+    │   ├── Migrations/
+    │   ├── Repositories/
+    │   │   ├── IRepository.cs
+    │   │   ├── PacienteRepository.cs
+    │   │   ├── MedicoRepository.cs
+    │   │   ├── AgendamentoRepository.cs
+    │   │   ├── HistoricoRepository.cs
+    │   │   └── LocalTrabalhoRepository.cs
+    │   ├── Configurations/
+    │   └── Consultorio.Data.csproj
+    │
+    ├── Consultorio.Domain/                
+    │   ├── Entities/
+    │   │   ├── Paciente.cs
+    │   │   ├── Medico.cs
+    │   │   ├── Agendamento.cs
+    │   │   ├── Historico.cs
+    │   │   └── LocalTrabalho.cs
+    │   ├── Interfaces/
+    │   │   ├── IRepository.cs
+    │   │   ├── IPacienteService.cs
+    │   │   ├── IMedicoService.cs
+    │   │   ├── IAgendamentoService.cs
+    │   │   └── INotificacaoService.cs
+    │   ├── Enums/
+    │   │   ├── StatusAgendamento.cs
+    │   │   └── TipoNotificacao.cs
+    │   └── Consultorio.Domain.csproj
+    │
+    ├── Consultorio.Services/              
+    │   ├── AgendamentoService.cs
+    │   ├── PacienteService.cs
+    │   ├── MedicoService.cs
+    │   ├── HistoricoService.cs
+    │   ├── LocalTrabalhoService.cs
+    │   ├── EmailService.cs
+    │   ├── WhatsAppService.cs
+    │   └── Consultorio.Services.csproj
+    │
+    └── Consultorio.Shared/                
+        ├── Constants/
+        ├── Exceptions/
+        ├── Helpers/
+        ├── Extensions/
+        └── Consultorio.Shared.csproj
+tests/
+    ├── Consultorio.Tests.Unit/
+    │   ├── Services/
+    │   └── Consultorio.Tests.Unit.csproj
+    └── Consultorio.Tests.Integration/
+        ├── Consultorio.Tests.Integration.csproj
+docs/
+    ├── DATABASE.md
+    ├── API.md
+    ├── SETUP.md
+    ├── ARCHITECTURE.md
+    └── DEPLOYMENT.md
+.gitignore
+Consultorio.sln
+README.md
