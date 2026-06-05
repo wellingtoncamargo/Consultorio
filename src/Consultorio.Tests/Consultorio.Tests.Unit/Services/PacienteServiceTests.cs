@@ -7,7 +7,7 @@ using Consultorio.Services;
 using Consultorio.Domain.Entities;
 using Consultorio.Domain.Repositories;
 
-namespace Consultorio.Tests.Unit
+namespace Consultorio.Tests.Unit.Services
 {
     [TestFixture]
     public class PacienteServiceTests
