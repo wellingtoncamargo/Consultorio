@@ -1,10 +1,50 @@
+# name: CI
+
+# on:
+#   push:
+#     branches: [ main, master ]
+#   pull_request:
+#     branches: [ main, master ]
+
+# jobs:
+#   build-and-test:
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v4
+
+#       - name: Setup .NET
+#         uses: actions/setup-dotnet@v3
+#         with:
+#           dotnet-version: '9.0.x'
+
+#       - name: Restore
+#         run: dotnet restore
+
+#       - name: Build
+#         run: dotnet build --no-restore --configuration Release
+
+#       - name: Run tests
+#         run: |
+#           dotnet test --no-build --configuration Release
+
+#       - name: Post summary
+#         if: always()
+#         run: echo "CI finished" 
+
 name: CI
 
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
+
   pull_request:
-    branches: [ main, master ]
+    branches:
+      - main
+      - master
 
 jobs:
   build-and-test:
@@ -15,20 +55,22 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v4
         with:
           dotnet-version: '9.0.x'
 
-      - name: Restore
-        run: dotnet restore
+      - name: Restore API
+        run: dotnet restore src/Consultorio.API/Consultorio.API.csproj
 
-      - name: Build
-        run: dotnet build --no-restore --configuration Release
+      - name: Build API
+        run: dotnet build src/Consultorio.API/Consultorio.API.csproj --configuration Release --no-restore
 
-      - name: Run tests
-        run: |
-          dotnet test --no-build --configuration Release
+      - name: Run Unit Tests
+        run: dotnet test src/Consultorio.Tests.Unit/Consultorio.Tests.Unit.csproj --configuration Release --no-build --verbosity normal
+
+      - name: Run Integration Tests
+        run: dotnet test src/Consultorio.Tests.Integration/Consultorio.Tests.Integration.csproj --configuration Release --no-build --verbosity normal
 
       - name: Post summary
         if: always()
-        run: echo "CI finished" 
+        run: echo "CI finished"
