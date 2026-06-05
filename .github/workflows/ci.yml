@@ -66,10 +66,10 @@ jobs:
         run: dotnet build src/Consultorio.API/Consultorio.API.csproj --configuration Release --no-restore
 
       - name: Run Unit Tests
-        run: dotnet test src/Consultorio.Tests/Consultorio.Tests.Unit/Consultorio.Tests.Unit.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test src/Consultorio.Tests/Consultorio.Tests.Unit/Consultorio.Tests.Unit.csproj --configuration Release --verbosity normal
 
       - name: Run Integration Tests
-        run: dotnet test src/Consultorio.Tests/Consultorio.Tests.Integration/Consultorio.Tests.Integration.csproj --configuration Release --no-build --verbosity normal
+        run: dotnet test src/Consultorio.Tests/Consultorio.Tests.Integration/Consultorio.Tests.Integration.csproj --configuration Release --verbosity normal
 
       - name: Post summary
         if: always()
