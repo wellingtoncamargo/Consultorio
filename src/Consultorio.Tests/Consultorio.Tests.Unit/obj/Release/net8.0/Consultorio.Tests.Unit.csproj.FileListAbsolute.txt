@@ -166,9 +166,9 @@ C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consu
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Application.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Domain.dll
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Services.dll
+C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Application.pdb
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Domain.pdb
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Services.pdb
-C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\bin\Release\net8.0\Consultorio.Application.pdb
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\obj\Release\net8.0\Consultorio.Tests.Unit.csproj.AssemblyReference.cache
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\obj\Release\net8.0\Consultorio.Tests.Unit.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\welli\OneDrive\Desktop\Projetos\Consultorio\src\Consultorio.Tests\Consultorio.Tests.Unit\obj\Release\net8.0\Consultorio.Tests.Unit.gentestingplatformentrypointinputcache.cache
